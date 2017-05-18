@@ -11,5 +11,6 @@ RUN mkdir /source \
     && chown -R www-data:www-data /usr/local/apache2/htdocs \
     && rm -rf /source
 
+COPY httpd.conf /usr/local/apache2/conf/httpd.conf
 EXPOSE 80 443
 ENTRYPOINT ["httpd-foreground"]
