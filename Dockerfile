@@ -1,7 +1,7 @@
 FROM httpd:alpine
 
 RUN apk update  \
-    && apk add --no-cache git certbot acme-client openssl ca-certificates \
+    && apk add --no-cache git openssl ca-certificates \
     && rm -rf /var/cache/apk/*
 
 RUN mkdir /source \
