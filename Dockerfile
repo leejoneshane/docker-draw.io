@@ -6,7 +6,7 @@ RUN apk update  \
 
 RUN mkdir /source \
     && cd /source \
-    && git clone https://github.com/jgraph/draw.io.git \
+    && git clone https://github.com/jgraph/drawio.git \
     && cp -R /src/main/webapp/* /usr/local/apache2/htdocs \
     && chown -R www-data:www-data /usr/local/apache2/htdocs \
     && rm -rf /source
